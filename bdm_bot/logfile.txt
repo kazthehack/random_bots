@@ -1,0 +1,8 @@
+2020-05-31T23:12:32.490999 0
+2020-05-31T23:12:32.714999 Going Home
+2020-05-31T23:12:38.476999 home_btn.png:True
+2020-05-31T23:12:53.493000 Buying Pots
+2020-05-31T23:12:58.374000 home_btn.png:True
+2020-05-31T23:13:13.398000 tapped: home_pots.png
+2020-05-31T23:13:16.207000 home_sell_junk.png:False
+2020-05-31T23:13:16.220000 tapped: home_pots.png

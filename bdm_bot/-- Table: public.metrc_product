@@ -1,0 +1,32 @@
+-- Table: public.metrc_product
+
+-- DROP TABLE public.metrc_product;
+
+CREATE TABLE public.metrc_product
+(
+    metrc_product_id bigint NOT NULL DEFAULT nextval('metrc_product_metrc_product_id_seq'::regclass),
+    metrc_strain_id bigint,
+    category character varying(255) COLLATE pg_catalog."default",
+    name character varying(255) COLLATE pg_catalog."default",
+    store_id bigint,
+    CONSTRAINT metrc_product_pkey PRIMARY KEY (metrc_product_id),
+    CONSTRAINT metrc_product_metrc_strain_id_fkey FOREIGN KEY (metrc_strain_id)
+        REFERENCES public.metrc_strain (metrc_strain_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION,
+    CONSTRAINT metrc_product_store_id_fkey FOREIGN KEY (store_id)
+        REFERENCES public.store (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.metrc_product
+    OWNER to bloom;
+
+GRANT ALL ON TABLE public.metrc_product TO bloom;
+
+GRANT SELECT ON TABLE public.metrc_product TO bloom_readonly;

@@ -1,0 +1,20 @@
+(Pdb) p package_quantity
+Decimal('100.0000')
+(Pdb) p related_packages
+defaultdict(<class 'dict'>, {24481: {4206: Decimal('15.0000'), 4291: Decimal('10.0000')}})
+(Pdb) p initial_package_quantity
+Decimal('115.0000')
+(Pdb) p price_per_unit
+Decimal('0.4347826086956521739130434783')
+(Pdb) p package_quantity * price_per_unit
+Decimal('43.47826086956521739130434783')
+(Pdb) p package_quantity * price
+Decimal('1000.000000')
+(Pdb) c
+> /Users/irvinbernardo/Desktop/work/official/bloom-api/develop_03_02/bloom_api/app/controllers/inventory_reports/cannabis_data.py(200)_get_beginning_values()
+-> i=1
+(Pdb) p package_quantity
+Decimal('85.0000')
+(Pdb) p sales_type
+<SalesType #3>
+(Pdb) p sales_type.name

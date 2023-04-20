@@ -1,0 +1,56 @@
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions] Script terminated due to an exception
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]Traceback (most recent call last):
+  File "/Users/irvinbernardo/Desktop/bdm_bot/main.py", line 308, in <module>
+    farmbot(device, debug,True)
+  File "/Users/irvinbernardo/Desktop/bdm_bot/main.py", line 221, in farmbot
+    if check_image(base, Elements.confirm):
+  File "/Users/irvinbernardo/Desktop/bdm_bot/main.py", line 17, in check_image
+    sub_image = base.getSubImage((target.x, target.y, target.width, target.height))
+        at sun.awt.image.ByteInterleavedRaster.createWritableChild(ByteInterleavedRaster.java:1245)
+        at java.awt.image.BufferedImage.getSubimage(BufferedImage.java:1202)
+        at com.android.chimpchat.core.ChimpImageBase.getSubImage(ChimpImageBase.java:217)
+        at com.android.monkeyrunner.MonkeyImage.getSubImage(MonkeyImage.java:159)
+        at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+
+java.awt.image.RasterFormatException: java.awt.image.RasterFormatException: (x + width) is outside of Raster
+
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.Py.JavaError(Py.java:495)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.Py.JavaError(Py.java:488)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:188)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:204)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyObject.__call__(PyObject.java:404)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyObject.__call__(PyObject.java:408)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyMethod.__call__(PyMethod.java:124)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.pycode._pyx0.check_image$2(/Users/irvinbernardo/Desktop/bdm_bot/main.py:23)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.pycode._pyx0.call_function(/Users/irvinbernardo/Desktop/bdm_bot/main.py)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyTableCode.call(PyTableCode.java:165)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyBaseCode.call(PyBaseCode.java:301)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyBaseCode.call(PyBaseCode.java:141)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyFunction.__call__(PyFunction.java:327)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.pycode._pyx0.farmbot$12(/Users/irvinbernardo/Desktop/bdm_bot/main.py:180)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.pycode._pyx0.call_function(/Users/irvinbernardo/Desktop/bdm_bot/main.py)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyTableCode.call(PyTableCode.java:165)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyBaseCode.call(PyBaseCode.java:166)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyFunction.__call__(PyFunction.java:338)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.pycode._pyx0.f$0(/Users/irvinbernardo/Desktop/bdm_bot/main.py:308)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.pycode._pyx0.call_function(/Users/irvinbernardo/Desktop/bdm_bot/main.py)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyTableCode.call(PyTableCode.java:165)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyCode.call(PyCode.java:18)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.Py.runCode(Py.java:1275)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.util.PythonInterpreter.execfile(PythonInterpreter.java:225)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at com.android.monkeyrunner.ScriptRunner.run(ScriptRunner.java:116)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at com.android.monkeyrunner.MonkeyRunnerStarter.run(MonkeyRunnerStarter.java:77)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at com.android.monkeyrunner.MonkeyRunnerStarter.main(MonkeyRunnerStarter.java:189)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]Caused by: java.awt.image.RasterFormatException: (x + width) is outside of Raster
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at sun.awt.image.ByteInterleavedRaster.createWritableChild(ByteInterleavedRaster.java:1245)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at java.awt.image.BufferedImage.getSubimage(BufferedImage.java:1202)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at com.android.chimpchat.core.ChimpImageBase.getSubImage(ChimpImageBase.java:217)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at com.android.monkeyrunner.MonkeyImage.getSubImage(MonkeyImage.java:159)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at java.lang.reflect.Method.invoke(Method.java:498)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   at org.python.core.PyReflectedFunction.__call__(PyReflectedFunction.java:186)
+200127 07:19:26.281:S [main] [com.android.monkeyrunner.MonkeyRunnerOptions]   ... 25 more
